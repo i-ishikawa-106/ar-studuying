@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,intial-scale=1">
+    <title>MarkZuckerberg</title>
+  </head>
+  <body style="margin:0px; overflow:hidden;">
+    <script src="https://aframe.io/releases/0.9.0/aframe.min.js"></script>
+    <script src="https://jeromeetienne.github.io/AR.js/aframe/build/aframe-ar.js"></script>
+    <script src="aframe-gif-shader.jsh"></script>
+    <a-scene embedded arjs="debugUIEnabled:false;">
+		  <a-anchor hit-testing-enabled='true'>
+        <a-entity geometry="primitive:box;" material="shader:gif;src:url(mark.gif);color:green;opacity:.8"></a-entity>
+		  </a-anchor>
+      <a-entity camera></a-entity>
+    </a-scene>
+  </body>
+</html>
